@@ -8,3 +8,11 @@ app.use(express.json());
 app.get("/", (req, res) => {
   res.send("Welcome to the Home Page!");
 });
+
+// sample route
+app.get("/api/sample", (req, res) => {
+  res.send([
+    { id: 1, name: "Tanish sharma" },
+    { id: 2, name: "Sharma tanish" },
+  ]);
+});
