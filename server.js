@@ -33,3 +33,9 @@ app.post("/api/users", (req, res) => {
   users.push(newUser);
   res.send(201).send(newUser);
 });
+
+// server listening
+const port = 3010;
+app.listen(port, () => {
+  console.log(`Server is running on http://localhost:${port}`);
+});
