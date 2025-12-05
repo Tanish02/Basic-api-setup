@@ -24,6 +24,11 @@ let users = [
   { id: 2, name: "Sharma tanish" },
 ];
 
+let usersNumber = [
+  { id: 1, name: "Tanish sharma", number: 1234567890 },
+  { id: 2, name: "Sharma tanish", number: 9876543210 },
+];
+
 app.post("/api/users", (req, res) => {
   const newUser = {
     id: users.length + 1,
@@ -38,4 +43,6 @@ app.post("/api/users", (req, res) => {
 const port = 3010;
 app.listen(port, () => {
   console.log(`Server is running on http://localhost:${port}`);
+  console.log("users", users);
+  console.log("usersNumber", usersNumber);
 });
