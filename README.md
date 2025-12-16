@@ -21,6 +21,7 @@ This repository contains a basic Express.js API server. It demonstrates fundamen
 
 ```
 .
+├── Snapshot         # Snapshots of outputs
 ├── app.js           # React component file (unused in server setup)
 ├── server.js        # Main Express server and API routes
 └── package.json     # Project metadata and dependencies
