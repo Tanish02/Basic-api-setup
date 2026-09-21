@@ -1,6 +1,6 @@
 const express = require("express");
 const app = express();
-const PORT = 5000;
+const PORT = 3010;
 
 app.use(express.json());
 
@@ -20,13 +20,13 @@ app.get("/api/sample", (req, res) => {
 // post route
 
 let users = [
-  { id: 1, name: "Tanish sharma" },
-  { id: 2, name: "Sharma tanish" },
+  { id: 100, name: "Tanish sharma" },
+  { id: 200, name: "Sharma tanish" },
 ];
 
 let usersNumber = [
-  { id: 1, name: "Tanish sharma", number: 1234567890 },
-  { id: 2, name: "Sharma tanish", number: 9876543210 },
+  { id: 101, name: "Tanish sharma", number: 1234567890 },
+  { id: 201, name: "Sharma tanish", number: 9876543210 },
 ];
 
 app.post("/api/users", (req, res) => {
@@ -39,6 +39,8 @@ app.post("/api/users", (req, res) => {
   res.send(201).send(newUser);
 });
 
+
+// check if users data ex
 // server listening
 const port = 3010;
 app.listen(port, () => {
